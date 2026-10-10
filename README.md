@@ -9,7 +9,7 @@ compares several classification models, and explains the predictions.
 
 ## Links
 
-- Live app: [Streamlit URL]
+- Live app: https://projet-maintenance-predective.streamlit.app/Modelisation
 ## Features
 
 | Module | Content |
