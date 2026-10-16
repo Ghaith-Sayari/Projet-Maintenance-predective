@@ -122,15 +122,6 @@ def fig_beeswarm(expl, max_display=12):
     return fig
 
 
-def fig_dependence(expl, feature):
-    plt.close("all")
-    try:
-        shap.plots.scatter(expl[:, feature], color=expl, show=False)
-    except Exception:
-        plt.close("all")
-        shap.plots.scatter(expl[:, feature], show=False)
-    fig = plt.gcf(); fig.tight_layout()
-    return fig
 
 
 def fig_waterfall(expl_one, max_display=12):
