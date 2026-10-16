@@ -104,6 +104,10 @@ with tab_g:
                 "À droite, la variable augmente le risque.")
     show(xai.fig_beeswarm(expl))
 
+    st.markdown("**Graphique de dépendance**")
+    ranked = [expl.feature_names[i] for i in np.argsort(-np.abs(expl.values).mean(0))]
+    feat = st.selectbox("Variable", ranked)
+    show(xai.fig_dependence(expl, feat))
 
 # ==================================================================
 # LOCAL
