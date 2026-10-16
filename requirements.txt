@@ -1,10 +1,12 @@
 streamlit
 pandas
 numpy
+scipy
 scikit-learn
 xgboost
 plotly
-scipy
 ucimlrepo
+joblib
+shap
+lime
 matplotlib
-
